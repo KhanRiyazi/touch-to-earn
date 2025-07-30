@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canva-to-Code Monetization Roadmap</title>
+    <style>
+        :root {
+            --canva-orange: #FF6B6B;
+            --python-blue: #3776AB;
+            --django-green: #092E20;
+            --selenium-red: #43B02A;
+            --ml-purple: #6E3BEC;
+            --dark-bg: #121212;
+            --card-bg: #1E1E1E;
+            --text-light: #F0F0F0;
+        }
+        body {
+            font-family: 'Segoe UI', system-ui, sans-serif;
+            background: var(--dark-bg);
+            color: var(--text-light);
+            line-height: 1.7;
+            padding: 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        h1, h2, h3 {
+            color: var(--canva-orange);
+        }
+        h1 {
+            border-bottom: 3px solid var(--python-blue);
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+        }
+        .pathway {
+            display: grid;
+            gap: 2rem;
+        }
+        .step {
+            background: var(--card-bg);
+            border-radius: 10px;
+            padding: 25px;
+            border-left: 5px solid;
+        }
+        .step-canva { border-color: var(--canva-orange); }
+        .step-scraping { border-color: var(--selenium-red); }
+        .step-django { border-color: var(--django-green); }
+        .step-ml { border-color: var(--ml-purple); }
+        .step-title {
+            font-size: 1.4rem;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+        }
+        .step-title i {
+            margin-right: 10px;
+            font-size: 1.5rem;
+        }
+        .official-link {
+            display: inline-block;
+            background: rgba(255,255,255,0.1);
+            color: var(--text-light);
+            padding: 8px 15px;
+            border-radius: 5px;
+            margin: 5px 10px 5px 0;
+            text-decoration: none;
+            border: 1px solid rgba(255,255,255,0.2);
+            transition: all 0.3s ease;
+        }
+        .official-link:hover {
+            background: rgba(255,255,255,0.2);
+            transform: translateY(-2px);
+        }
+        .canva-link { background: rgba(255,107,107,0.2); }
+        .python-link { background: rgba(55,118,171,0.2); }
+        .django-link { background: rgba(9,46,32,0.2); }
+        .selenium-link { background: rgba(67,176,42,0.2); }
+        .ml-link { background: rgba(110,59,236,0.2); }
+        .workflow {
+            margin: 30px 0;
+            padding: 20px;
+            background: rgba(255,255,255,0.05);
+            border-radius: 8px;
+            position: relative;
+        }
+        .workflow-title {
+            position: absolute;
+            top: -12px;
+            left: 20px;
+            background: var(--dark-bg);
+            padding: 0 10px;
+            font-weight: bold;
+            color: var(--python-blue);
+        }
+        .monetization-tip {
+            background: rgba(255,212,59,0.1);
+            border-left: 3px solid var(--python-blue);
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 0 5px 5px 0;
+        }
+        @media (max-width: 768px) {
+            body {
+                padding: 15px;
+            }
+            .step {
+                padding: 15px;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <h1>Canva-to-Code Monetization Pathway</h1>
+    <p>Official documentation links and actionable steps to connect your design skills with technical implementation</p>
+
+    <div class="workflow">
+        <div class="workflow-title">END-TO-END WORKFLOW</div>
+        Canva Design → Python Automation (Selenium) → Django API → Machine Learning → Monetization
+    </div>
+
+    <!-- Step 1: Canva -->
+    <div class="step step-canva">
+        <h2 class="step-title"><i class="fab fa-canva"></i> Canva Design Foundation</h2>
+        <p>Create marketable designs that enhance your technical products:</p>
+        
+        <a href="https://www.canva.com/developers/" class="official-link canva-link" target="_blank">
+            <i class="fas fa-external-link-alt"></i> Canva Developer API
+        </a>
+        <a href="https://www.canva.com/design-school/" class="official-link canva-link" target="_blank">
+            <i class="fas fa-graduation-cap"></i> Design School
+        </a>
+        
+        <div class="monetization-tip">
+            <strong>Monetization Tip:</strong> Sell Canva templates specifically for developers - code snippet designs, API documentation templates, and tech webinar slides.
+        </div>
+    </div>
+
+    <!-- Step 2: Python Scraping/Selenium -->
+    <div class="step step-scraping">
+        <h2 class="step-title"><i class="fab fa-python"></i> Data Acquisition Layer</h2>
+        <p>Official resources for web automation and data collection:</p>
+        
+        <a href="https://selenium-python.readthedocs.io/" class="official-link selenium-link" target="_blank">
+            <i class="fas fa-book"></i> Selenium Python Docs
+        </a>
+        <a href="https://scrapy.org/doc/" class="official-link selenium-link" target="_blank">
+            <i class="fas fa-spider"></i> Scrapy Documentation
+        </a>
+        <a href="https://requests.readthedocs.io/en/latest/" class="official-link selenium-link" target="_blank">
+            <i class="fas fa-cloud-download-alt"></i> Requests Library
+        </a>
+        
+        <div class="monetization-tip">
+            <strong>Service Idea:</strong> Offer "Design-Aware Scraping" - deliver scraped data with Canva-designed visual reports. Charge $50-$200 per project.
+        </div>
+    </div>
+
+    <!-- Step 3: Django API -->
+    <div class="step step-django">
+        <h2 class="step-title"><i class="fab fa-python"></i> Backend Implementation</h2>
+        <p>Build robust APIs to serve your scraped data and ML models:</p>
+        
+        <a href="https://docs.djangoproject.com/en/stable/" class="official-link django-link" target="_blank">
+            <i class="fas fa-server"></i> Django Documentation
+        </a>
+        <a href="https://www.django-rest-framework.org/" class="official-link django-link" target="_blank">
+            <i class="fas fa-code"></i> Django REST Framework
+        </a>
+        <a href="https://docs.celeryproject.org/en/stable/" class="official-link django-link" target="_blank">
+            <i class="fas fa-tasks"></i> Celery (Background Tasks)
+        </a>
+        
+        <div class="monetization-tip">
+            <strong>Product Idea:</strong> Create "Scraping-as-a-Service" dashboards with Django admin + Canva-designed client reports. Charge monthly subscriptions.
+        </div>
+    </div>
+
+    <!-- Step 4: Machine Learning -->
+    <div class="step step-ml">
+        <h2 class="step-title"><i class="fas fa-brain"></i> Value-Added ML Layer</h2>
+        <p>Enhance your data products with predictive capabilities:</p>
+        
+        <a href="https://scikit-learn.org/stable/documentation.html" class="official-link ml-link" target="_blank">
+            <i class="fas fa-chart-line"></i> scikit-learn Docs
+        </a>
+        <a href="https://www.tensorflow.org/api_docs" class="official-link ml-link" target="_blank">
+            <i class="fas fa-project-diagram"></i> TensorFlow API
+        </a>
+        <a href="https://pytorch.org/docs/stable/index.html" class="official-link ml-link" target="_blank">
+            <i class="fas fa-robot"></i> PyTorch Documentation
+        </a>
+        
+        <div class="monetization-tip">
+            <strong>Premium Offer:</strong> Add "AI Insights" to your scraping services - price predictions, sentiment analysis, or trend forecasting. Charge 2-3x more.
+        </div>
+    </div>
+
+    <!-- Integration Guide -->
+    <div class="step">
+        <h2 class="step-title"><i class="fas fa-project-diagram"></i> Full Stack Integration</h2>
+        <p>Connect all components into marketable products:</p>
+        
+        <div class="monetization-tip">
+            <strong>Product Example:</strong><br>
+            1. Use Selenium to scrape eCommerce prices<br>
+            2. Process with scikit-learn for price trends<br> 
+            3. Serve via Django API<br>
+            4. Present in Canva-designed dashboards<br>
+            5. Sell as "Competitor Intelligence Suite" ($99/month)
+        </div>
+        
+        <a href="https://www.django-rest-framework.org/tutorial/quickstart/" class="official-link" target="_blank">
+            <i class="fas fa-plug"></i> Django REST Quickstart
+        </a>
+        <a href="https://plotly.com/django/" class="official-link" target="_blank">
+            <i class="fas fa-chart-bar"></i> Django Data Visualization
+        </a>
+    </div>
+
+    <h2>Your 5-Step Activation Plan</h2>
+    <ol>
+        <li><strong>Choose a niche</strong> (e.g., eCommerce, real estate, finance)</li>
+        <li><strong>Build one integrated product</strong> using the workflow above</li>
+        <li><strong>Create Canva marketing materials</strong> (landing page, demo videos)</li>
+        <li><strong>List on freelance platforms</strong> as a specialized service</li>
+        <li><strong>Offer tiered pricing</strong> (Basic scraping → Premium with ML)</li>
+    </ol>
+</body>
+</html>
