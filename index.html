@@ -25,6 +25,9 @@
             --youtube-red: #FF0000;
             --seo-green: #3AAE2A;
             --success-green: #4CAF50;
+            --accent: #5624d0;
+            --secondary: #1c1d1f;
+            --light-gray: #6a6f73;
         }
 
         * {
@@ -39,7 +42,7 @@
             color: var(--text-light);
             line-height: 1.7;
             padding: 20px;
-            max-width: 1200px;
+            max-width: 1400px;
             margin: 0 auto;
             position: relative;
         }
@@ -843,12 +846,220 @@
             text-decoration: none;
         }
 
-        
+        /* Resource Grid */
+        .resource-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 15px;
+            margin: 20px 0;
+        }
+
+        .resource-card {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 8px;
+            padding: 15px;
+            border-left: 4px solid var(--python-blue);
+            transition: all 0.3s ease;
+        }
+
+        .resource-card:hover {
+            transform: translateY(-3px);
+            background: rgba(255, 255, 255, 0.1);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .resource-card h4 {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 10px;
+            color: var(--canva-orange);
+        }
+
+        .resource-card a {
+            display: block;
+            padding: 8px 0;
+            color: var(--text-light);
+            text-decoration: none;
+            transition: color 0.3s ease;
+            font-size: 0.9rem;
+        }
+
+        .resource-card a:hover {
+            color: var(--python-blue);
+            text-decoration: underline;
+        }
+
+        .resource-card i {
+            color: var(--python-blue);
+        }
+
+        /* Professional Header */
+        .pro-header {
+            background: var(--secondary);
+            padding: 20px 0;
+            margin-bottom: 30px;
+            border-bottom: 1px solid #333;
+        }
+
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: var(--primary);
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav-links a {
+            color: var(--text-light);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: var(--canva-orange);
+        }
+
+        /* Professional Sections */
+        .pro-section {
+            margin: 50px 0;
+            padding: 30px;
+            background: var(--card-bg);
+            border-radius: 10px;
+        }
+
+        .section-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 30px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #333;
+        }
+
+        /* Tooltip */
+        .tooltip {
+            position: relative;
+            display: inline-block;
+        }
+
+        .tooltip .tooltiptext {
+            visibility: hidden;
+            width: 200px;
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            border-radius: 6px;
+            padding: 10px;
+            position: absolute;
+            z-index: 1;
+            bottom: 125%;
+            left: 50%;
+            margin-left: -100px;
+            opacity: 0;
+            transition: opacity 0.3s;
+            font-size: 0.9rem;
+        }
+
+        .tooltip:hover .tooltiptext {
+            visibility: visible;
+            opacity: 1;
+        }
+
+        /* Badges */
+        .badge {
+            display: inline-block;
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            font-weight: bold;
+            margin-left: 8px;
+        }
+
+        .badge-new {
+            background: var(--success-green);
+            color: white;
+        }
+
+        .badge-popular {
+            background: var(--canva-orange);
+            color: white;
+        }
+
+        /* Tabs */
+        .tab-container {
+            margin: 30px 0;
+        }
+
+        .tab-header {
+            display: flex;
+            border-bottom: 1px solid #333;
+        }
+
+        .tab-btn {
+            padding: 12px 20px;
+            cursor: pointer;
+            background: transparent;
+            border: none;
+            color: var(--text-light);
+            font-weight: 500;
+            position: relative;
+        }
+
+        .tab-btn.active {
+            color: var(--canva-orange);
+        }
+
+        .tab-btn.active::after {
+            content: '';
+            position: absolute;
+            bottom: -1px;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background: var(--canva-orange);
+        }
+
+        .tab-content {
+            display: none;
+            padding: 20px 0;
+        }
+
+        .tab-content.active {
+            display: block;
+        }
     </style>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
 <body>
+    <!-- Professional Header -->
+    <header class="pro-header">
+        <div class="header-container">
+            <div class="logo">Rizwan Khan</div>
+            <nav class="nav-links">
+                <a href="#services">Services</a>
+                <a href="#projects">Projects</a>
+                <a href="#resources">Resources</a>
+                <a href="#testimonials">Testimonials</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+
     <!-- Profile Header -->
     <header class="profile-header">
         <img src="./myImg.png" alt="Rizwan's Profile Photo" class="profile-photo">
@@ -872,7 +1083,6 @@
                     <i class="fas fa-hands-helping"></i> 
                 </a>
             </div>
-
         </div>
     </header>
 
@@ -900,7 +1110,7 @@
     </div>
 
     <!-- Projects Showcase -->
-    <section class="projects-showcase">
+    <section id="projects" class="projects-showcase">
         <h2 class="step-title"><i class="fas fa-project-diagram"></i> My Projects Showcase</h2>
         <div class="project-tabs">
             <div class="project-tab active" onclick="showProject('github')">GitHub</div>
@@ -985,7 +1195,7 @@
     </section>
 
     <!-- Services Section -->
-    <section class="step step-ml">
+    <section id="services" class="step step-ml">
         <h2 class="step-title"><i class="fas fa-dollar-sign"></i> Premium Services</h2>
         <p>Custom solutions tailored to your business needs with clear ROI:</p>
 
@@ -1045,7 +1255,7 @@
     </section>
 
     <!-- Testimonials Section -->
-    <section class="step step-social">
+    <section id="testimonials" class="step step-social">
         <h2 class="step-title"><i class="fas fa-quote-left"></i> Client Success Stories</h2>
 
         <div class="testimonials">
@@ -1094,14 +1304,197 @@
     </section>
 
     <!-- Complete Monetization Pathway -->
-    <section>
-        <h1>Full Stack Monetization Pathway</h1>
+    <section class="pro-section">
+        <div class="section-header">
+            <h2><i class="fas fa-chart-line"></i> Full Stack Monetization Pathway</h2>
+            <div class="tooltip">
+                <i class="fas fa-info-circle"></i>
+                <span class="tooltiptext">This pathway shows how to connect all your skills for maximum income potential</span>
+            </div>
+        </div>
         <p>Leverage your GitHub, Blogger, Scratch, and social media for maximum earnings</p>
 
         <div class="workflow">
             <div class="workflow-title">COMPLETE MONETIZATION WORKFLOW</div>
             GitHub Repos + Scratch Projects → Social Media Growth → Blogger Content → Canva Design → Python Automation →
             Django API → Machine Learning → Income Streams
+        </div>
+    </section>
+
+    <!-- Professional Resources Section -->
+    <section id="resources" class="pro-section">
+        <div class="section-header">
+            <h2><i class="fas fa-book-open"></i> Professional Development Resources</h2>
+            <p>Essential tools and platforms to enhance your technical skills and business</p>
+        </div>
+
+        <div class="tab-container">
+            <div class="tab-header">
+                <button class="tab-btn active" onclick="openTab('dev-tools')">Development</button>
+                <button class="tab-btn" onclick="openTab('content-tools')">Content</button>
+                <button class="tab-btn" onclick="openTab('automation-tools')">Automation</button>
+                <button class="tab-btn" onclick="openTab('monetization-tools')">Monetization</button>
+            </div>
+
+            <div id="dev-tools" class="tab-content active">
+                <div class="resource-grid">
+                    <div class="resource-card">
+                        <h4><i class="fab fa-python"></i> Python Development</h4>
+                        <a href="https://www.python.org/" target="_blank">Python Official Website</a>
+                        <a href="https://docs.python.org/3/" target="_blank">Python Documentation</a>
+                        <a href="https://wiki.python.org/moin/" target="_blank">Python Wiki</a>
+                        <a href="https://pypi.org/" target="_blank">PyPI Package Index</a>
+                        <a href="https://realpython.com/" target="_blank">Real Python Tutorials</a>
+                    </div>
+                    
+                    <div class="resource-card">
+                        <h4><i class="fab fa-github"></i> GitHub Resources</h4>
+                        <a href="https://github.com/" target="_blank">GitHub Main</a>
+                        <a href="https://docs.github.com/" target="_blank">GitHub Docs</a>
+                        <a href="https://github.com/sponsors" target="_blank">GitHub Sponsors</a>
+                        <a href="https://opensource.guide/" target="_blank">Open Source Guide</a>
+                        <a href="https://education.github.com/pack" target="_blank">GitHub Student Pack</a>
+                    </div>
+                    
+                    <div class="resource-card">
+                        <h4><i class="fab fa-js"></i> Web Development</h4>
+                        <a href="https://developer.mozilla.org/" target="_blank">MDN Web Docs</a>
+                        <a href="https://www.w3schools.com/" target="_blank">W3Schools</a>
+                        <a href="https://devdocs.io/" target="_blank">DevDocs API</a>
+                        <a href="https://stackoverflow.com/" target="_blank">Stack Overflow</a>
+                        <a href="https://www.freecodecamp.org/" target="_blank">freeCodeCamp</a>
+                    </div>
+                    
+                    <div class="resource-card">
+                        <h4><i class="fas fa-database"></i> Databases</h4>
+                        <a href="https://www.postgresql.org/" target="_blank">PostgreSQL</a>
+                        <a href="https://www.mongodb.com/" target="_blank">MongoDB</a>
+                        <a href="https://redis.io/" target="_blank">Redis</a>
+                        <a href="https://www.sqlite.org/" target="_blank">SQLite</a>
+                        <a href="https://www.mysql.com/" target="_blank">MySQL</a>
+                    </div>
+                </div>
+            </div>
+
+            <div id="content-tools" class="tab-content">
+                <div class="resource-grid">
+                    <div class="resource-card">
+                        <h4><i class="fab fa-blogger"></i> Blogging Platforms</h4>
+                        <a href="https://www.blogger.com/" target="_blank">Blogger</a>
+                        <a href="https://wordpress.com/" target="_blank">WordPress</a>
+                        <a href="https://dev.to/" target="_blank">DEV Community</a>
+                        <a href="https://medium.com/" target="_blank">Medium</a>
+                        <a href="https://hashnode.com/" target="_blank">Hashnode</a>
+                    </div>
+                    
+                    <div class="resource-card">
+                        <h4><i class="fab fa-youtube"></i> Video Content</h4>
+                        <a href="https://www.youtube.com/" target="_blank">YouTube</a>
+                        <a href="https://studio.youtube.com/" target="_blank">YouTube Studio</a>
+                        <a href="https://creatoracademy.youtube.com/" target="_blank">Creator Academy</a>
+                        <a href="https://www.vimeo.com/" target="_blank">Vimeo</a>
+                        <a href="https://www.loom.com/" target="_blank">Loom Screen Recording</a>
+                    </div>
+                    
+                    <div class="resource-card">
+                        <h4><i class="fas fa-pen-fancy"></i> Writing Tools</h4>
+                        <a href="https://www.grammarly.com/" target="_blank">Grammarly</a>
+                        <a href="https://hemingwayapp.com/" target="_blank">Hemingway Editor</a>
+                        <a href="https://www.notion.so/" target="_blank">Notion</a>
+                        <a href="https://obsidian.md/" target="_blank">Obsidian</a>
+                        <a href="https://www.markdownguide.org/" target="_blank">Markdown Guide</a>
+                    </div>
+                    
+                    <div class="resource-card">
+                        <h4><i class="fab fa-canva"></i> Design Tools</h4>
+                        <a href="https://www.canva.com/" target="_blank">Canva</a>
+                        <a href="https://www.figma.com/" target="_blank">Figma</a>
+                        <a href="https://www.adobe.com/products/photoshop.html" target="_blank">Photoshop</a>
+                        <a href="https://www.photopea.com/" target="_blank">Photopea (Online PS)</a>
+                        <a href="https://unsplash.com/" target="_blank">Unsplash Free Images</a>
+                    </div>
+                </div>
+            </div>
+
+            <div id="automation-tools" class="tab-content">
+                <div class="resource-grid">
+                    <div class="resource-card">
+                        <h4><i class="fas fa-robot"></i> Web Automation</h4>
+                        <a href="https://www.selenium.dev/" target="_blank">Selenium</a>
+                        <a href="https://playwright.dev/" target="_blank">Playwright</a>
+                        <a href="https://pptr.dev/" target="_blank">Puppeteer</a>
+                        <a href="https://scrapy.org/" target="_blank">Scrapy</a>
+                        <a href="https://www.crummy.com/software/BeautifulSoup/" target="_blank">BeautifulSoup</a>
+                    </div>
+                    
+                    <div class="resource-card">
+                        <h4><i class="fas fa-tasks"></i> Task Automation</h4>
+                        <a href="https://zapier.com/" target="_blank">Zapier</a>
+                        <a href="https://ifttt.com/" target="_blank">IFTTT</a>
+                        <a href="https://www.make.com/" target="_blank">Make (Integromat)</a>
+                        <a href="https://n8n.io/" target="_blank">n8n</a>
+                        <a href="https://www.autohotkey.com/" target="_blank">AutoHotkey</a>
+                    </div>
+                    
+                    <div class="resource-card">
+                        <h4><i class="fas fa-cloud"></i> Cloud Services</h4>
+                        <a href="https://aws.amazon.com/" target="_blank">AWS</a>
+                        <a href="https://cloud.google.com/" target="_blank">Google Cloud</a>
+                        <a href="https://azure.microsoft.com/" target="_blank">Microsoft Azure</a>
+                        <a href="https://www.digitalocean.com/" target="_blank">DigitalOcean</a>
+                        <a href="https://www.heroku.com/" target="_blank">Heroku</a>
+                    </div>
+                    
+                    <div class="resource-card">
+                        <h4><i class="fas fa-server"></i> Deployment</h4>
+                        <a href="https://www.docker.com/" target="_blank">Docker</a>
+                        <a href="https://kubernetes.io/" target="_blank">Kubernetes</a>
+                        <a href="https://www.nginx.com/" target="_blank">NGINX</a>
+                        <a href="https://certbot.eff.org/" target="_blank">Certbot (SSL)</a>
+                        <a href="https://www.postman.com/" target="_blank">Postman API Testing</a>
+                    </div>
+                </div>
+            </div>
+
+            <div id="monetization-tools" class="tab-content">
+                <div class="resource-grid">
+                    <div class="resource-card">
+                        <h4><i class="fas fa-ad"></i> Advertising</h4>
+                        <a href="https://www.google.com/adsense" target="_blank">Google AdSense</a>
+                        <a href="https://www.ezoic.com/" target="_blank">Ezoic</a>
+                        <a href="https://www.mediavine.com/" target="_blank">Mediavine</a>
+                        <a href="https://www.adthrive.com/" target="_blank">AdThrive</a>
+                        <a href="https://www.buysellads.com/" target="_blank">BuySellAds</a>
+                    </div>
+                    
+                    <div class="resource-card">
+                        <h4><i class="fas fa-link"></i> Affiliate Marketing</h4>
+                        <a href="https://affiliate-program.amazon.com/" target="_blank">Amazon Associates</a>
+                        <a href="https://www.shareasale.com/" target="_blank">ShareASale</a>
+                        <a href="https://www.cj.com/" target="_blank">CJ Affiliate</a>
+                        <a href="https://www.impact.com/" target="_blank">Impact</a>
+                        <a href="https://www.awin.com/" target="_blank">Awin</a>
+                    </div>
+                    
+                    <div class="resource-card">
+                        <h4><i class="fas fa-shopping-cart"></i> Digital Products</h4>
+                        <a href="https://www.gumroad.com/" target="_blank">Gumroad</a>
+                        <a href="https://www.podia.com/" target="_blank">Podia</a>
+                        <a href="https://www.teachable.com/" target="_blank">Teachable</a>
+                        <a href="https://www.thinkific.com/" target="_blank">Thinkific</a>
+                        <a href="https://www.udemy.com/" target="_blank">Udemy</a>
+                    </div>
+                    
+                    <div class="resource-card">
+                        <h4><i class="fas fa-hand-holding-usd"></i> Crowdfunding</h4>
+                        <a href="https://www.patreon.com/" target="_blank">Patreon</a>
+                        <a href="https://www.buymeacoffee.com/" target="_blank">Buy Me a Coffee</a>
+                        <a href="https://www.kickstarter.com/" target="_blank">Kickstarter</a>
+                        <a href="https://www.indiegogo.com/" target="_blank">Indiegogo</a>
+                        <a href="https://opencollective.com/" target="_blank">Open Collective</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -1120,6 +1513,12 @@
         <a href="https://wiki.python.org/moin/" class="official-link python-link" target="_blank">
             <i class="fas fa-info-circle"></i> Python Wiki
         </a>
+        <a href="https://pypi.org/" class="official-link python-link" target="_blank">
+            <i class="fas fa-box-open"></i> PyPI Package Index
+        </a>
+        <a href="https://peps.python.org/" class="official-link python-link" target="_blank">
+            <i class="fas fa-file-alt"></i> Python Enhancement Proposals
+        </a>
 
         <h3>GitHub Resources</h3>
         <a href="https://github.com/" class="official-link github-link" target="_blank">
@@ -1131,6 +1530,12 @@
         <a href="https://github.com/sponsors" class="official-link github-link" target="_blank">
             <i class="fas fa-heart"></i> GitHub Sponsors
         </a>
+        <a href="https://education.github.com/" class="official-link github-link" target="_blank">
+            <i class="fas fa-graduation-cap"></i> GitHub Education
+        </a>
+        <a href="https://github.com/features/copilot" class="official-link github-link" target="_blank">
+            <i class="fas fa-robot"></i> GitHub Copilot
+        </a>
 
         <h3>MIT Scratch</h3>
         <a href="https://scratch.mit.edu/" class="official-link scratch-link" target="_blank">
@@ -1141,6 +1546,12 @@
         </a>
         <a href="https://scratch.mit.edu/developers" class="official-link scratch-link" target="_blank">
             <i class="fas fa-cog"></i> Scratch Developer Tools
+        </a>
+        <a href="https://scratch.mit.edu/educators" class="official-link scratch-link" target="_blank">
+            <i class="fas fa-chalkboard-teacher"></i> Scratch for Educators
+        </a>
+        <a href="https://scratch.mit.edu/statistics/" class="official-link scratch-link" target="_blank">
+            <i class="fas fa-chart-bar"></i> Scratch Statistics
         </a>
     </section>
 
@@ -1156,11 +1567,20 @@
         <a href="https://search.google.com/search-console" class="official-link seo-link" target="_blank">
             <i class="fas fa-tools"></i> Google Search Console
         </a>
+        <a href="https://analytics.google.com/" class="official-link seo-link" target="_blank">
+            <i class="fas fa-chart-line"></i> Google Analytics
+        </a>
         <a href="https://creatoracademy.youtube.com/" class="official-link youtube-link" target="_blank">
             <i class="fab fa-youtube"></i> YouTube Creator Academy
         </a>
         <a href="https://studio.youtube.com/" class="official-link youtube-link" target="_blank">
             <i class="fas fa-chart-line"></i> YouTube Studio
+        </a>
+        <a href="https://ads.google.com/" class="official-link youtube-link" target="_blank">
+            <i class="fas fa-ad"></i> Google Ads
+        </a>
+        <a href="https://www.google.com/business/" class="official-link seo-link" target="_blank">
+            <i class="fas fa-store"></i> Google My Business
         </a>
 
         <div class="monetization-tip">
@@ -1186,6 +1606,15 @@
         <a href="https://www.google.com/ads/" class="official-link blogger-link" target="_blank">
             <i class="fas fa-ad"></i> Google Ads
         </a>
+        <a href="https://www.semrush.com/" class="official-link blogger-link" target="_blank">
+            <i class="fas fa-search-dollar"></i> SEMrush SEO Tools
+        </a>
+        <a href="https://ahrefs.com/" class="official-link blogger-link" target="_blank">
+            <i class="fas fa-link"></i> Ahrefs Backlink Checker
+        </a>
+        <a href="https://moz.com/" class="official-link blogger-link" target="_blank">
+            <i class="fas fa-chart-pie"></i> Moz SEO Tools
+        </a>
 
         <div class="monetization-tip">
             <strong>Action Plan:</strong><br>
@@ -1209,6 +1638,12 @@
         </a>
         <a href="https://scratch.mit.edu/studios/30136012/" class="official-link scratch-link" target="_blank">
             <i class="fas fa-project-diagram"></i> Your Scratch Studios
+        </a>
+        <a href="https://scratch.mit.edu/discuss/" class="official-link scratch-link" target="_blank">
+            <i class="fas fa-comments"></i> Scratch Discussion Forums
+        </a>
+        <a href="https://scratch.mit.edu/ideas" class="official-link scratch-link" target="_blank">
+            <i class="fas fa-lightbulb"></i> Scratch Project Ideas
         </a>
 
         <div class="monetization-tip">
@@ -1237,6 +1672,15 @@
         <a href="https://ads.google.com/" class="official-link social-link" target="_blank">
             <i class="fab fa-google"></i> Google Ads
         </a>
+        <a href="https://analytics.twitter.com/" class="official-link social-link" target="_blank">
+            <i class="fab fa-twitter"></i> Twitter Analytics
+        </a>
+        <a href="https://www.linkedin.com/business/" class="official-link social-link" target="_blank">
+            <i class="fab fa-linkedin"></i> LinkedIn Business
+        </a>
+        <a href="https://business.pinterest.com/" class="official-link social-link" target="_blank">
+            <i class="fab fa-pinterest"></i> Pinterest Business
+        </a>
 
         <div class="monetization-tip">
             <strong>Growth Strategy:</strong><br>
@@ -1263,6 +1707,15 @@
         <a href="https://gumroad.com/" class="official-link github-link" target="_blank">
             <i class="fas fa-shopping-cart"></i> Sell on Gumroad
         </a>
+        <a href="https://github.com/marketplace" class="official-link github-link" target="_blank">
+            <i class="fas fa-store"></i> GitHub Marketplace
+        </a>
+        <a href="https://github.com/features/actions" class="official-link github-link" target="_blank">
+            <i class="fas fa-bolt"></i> GitHub Actions
+        </a>
+        <a href="https://github.com/features/packages" class="official-link github-link" target="_blank">
+            <i class="fas fa-box"></i> GitHub Packages
+        </a>
 
         <div class="monetization-tip">
             <strong>Action Plan:</strong><br>
@@ -1273,8 +1726,6 @@
             5. Bundle related projects into toolkits
         </div>
     </section>
-
-    <!-- Add this after the GitHub Monetization section and before the Contact section -->
 
     <!-- Canva Design Foundation Section -->
     <section class="step step-canva">
@@ -1308,6 +1759,15 @@
         <a href="https://www.canva.com/design-school/" class="official-link canva-link" target="_blank">
             <i class="fas fa-graduation-cap"></i> Design School
         </a>
+        <a href="https://www.canva.com/brand/" class="official-link canva-link" target="_blank">
+            <i class="fas fa-palette"></i> Brand Kit
+        </a>
+        <a href="https://www.canva.com/templates/" class="official-link canva-link" target="_blank">
+            <i class="fas fa-layer-group"></i> Templates
+        </a>
+        <a href="https://www.canva.com/print/" class="official-link canva-link" target="_blank">
+            <i class="fas fa-print"></i> Print Services
+        </a>
 
         <div class="monetization-tip">
             <strong>Monetization Strategy:</strong><br>
@@ -1336,6 +1796,18 @@
         </a>
         <a href="https://pypi.org/project/beautifulsoup4/" class="official-link selenium-link" target="_blank">
             <i class="fas fa-code"></i> BeautifulSoup
+        </a>
+        <a href="https://requests.readthedocs.io/" class="official-link selenium-link" target="_blank">
+            <i class="fas fa-globe"></i> Requests Library
+        </a>
+        <a href="https://pandas.pydata.org/" class="official-link selenium-link" target="_blank">
+            <i class="fas fa-table"></i> Pandas Data Analysis
+        </a>
+        <a href="https://www.crummy.com/software/BeautifulSoup/" class="official-link selenium-link" target="_blank">
+            <i class="fas fa-file-code"></i> BeautifulSoup Docs
+        </a>
+        <a href="https://playwright.dev/" class="official-link selenium-link" target="_blank">
+            <i class="fas fa-window-maximize"></i> Playwright
         </a>
 
         <div class="monetization-tip">
@@ -1376,6 +1848,18 @@
         </a>
         <a href="https://www.django-rest-framework.org/" class="official-link django-link" target="_blank">
             <i class="fas fa-code"></i> Django REST Framework
+        </a>
+        <a href="https://flask.palletsprojects.com/" class="official-link django-link" target="_blank">
+            <i class="fas fa-flask"></i> Flask Framework
+        </a>
+        <a href="https://fastapi.tiangolo.com/" class="official-link django-link" target="_blank">
+            <i class="fas fa-bolt"></i> FastAPI
+        </a>
+        <a href="https://www.postman.com/" class="official-link django-link" target="_blank">
+            <i class="fas fa-paper-plane"></i> Postman API Testing
+        </a>
+        <a href="https://swagger.io/" class="official-link django-link" target="_blank">
+            <i class="fas fa-file-alt"></i> Swagger Documentation
         </a>
 
         <div class="monetization-tip">
@@ -1423,6 +1907,18 @@
         </a>
         <a href="https://pytorch.org/docs/stable/index.html" class="official-link ml-link" target="_blank">
             <i class="fas fa-network-wired"></i> PyTorch Docs
+        </a>
+        <a href="https://keras.io/" class="official-link ml-link" target="_blank">
+            <i class="fas fa-layer-group"></i> Keras Documentation
+        </a>
+        <a href="https://spacy.io/" class="official-link ml-link" target="_blank">
+            <i class="fas fa-language"></i> spaCy NLP
+        </a>
+        <a href="https://huggingface.co/" class="official-link ml-link" target="_blank">
+            <i class="fas fa-robot"></i> Hugging Face Models
+        </a>
+        <a href="https://openai.com/api/" class="official-link ml-link" target="_blank">
+            <i class="fas fa-brain"></i> OpenAI API
         </a>
     </section>
 
@@ -1609,6 +2105,23 @@
 
         // Set current year in footer
         document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+        // Tab functionality for resources
+        function openTab(tabId) {
+            // Hide all tab contents
+            document.querySelectorAll('.tab-content').forEach(content => {
+                content.classList.remove('active');
+            });
+
+            // Deactivate all tab buttons
+            document.querySelectorAll('.tab-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+
+            // Activate selected tab and content
+            document.getElementById(tabId).classList.add('active');
+            event.currentTarget.classList.add('active');
+        }
 
         // Initialize project rotation
         document.addEventListener('DOMContentLoaded', function () {
