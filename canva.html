@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empower Canvassador Program | Canva</title>
+    <style>
+        /* ===== Professional Reset ===== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', sans-serif;
+        }
+        
+        body {
+            color: #333;
+            line-height: 1.6;
+            font-size: 16px;
+        }
+        
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+        
+        /* ===== Color Variables ===== */
+        :root {
+            --canva-purple: #7d2ae8;
+            --canva-teal: #00c4cc;
+            --dark-gray: #333;
+            --light-gray: #f5f5f5;
+            --white: #ffffff;
+        }
+        
+        /* ===== Header ===== */
+        .header {
+            background-color: var(--canva-purple);
+            color: var(--white);
+            padding: 80px 20px;
+            text-align: center;
+            position: relative;
+        }
+        
+        .back-link {
+            position: absolute;
+            top: 30px;
+            left: 30px;
+            color: var(--canva-teal);
+            text-decoration: none;
+            text-transform: uppercase;
+            font-weight: bold;
+            font-size: 0.8rem;
+            display: flex;
+            align-items: center;
+        }
+        
+        .back-link::before {
+            content: "";
+            display: inline-block;
+            width: 15px;
+            height: 2px;
+            background-color: var(--canva-teal);
+            margin-right: 8px;
+        }
+        
+        .header h1 {
+            font-size: 3rem;
+            margin: 0 auto 20px;
+            max-width: 800px;
+            font-weight: 700;
+            line-height: 1.2;
+        }
+        
+        /* ===== Content Sections ===== */
+        .section {
+            padding: 60px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .section-title {
+            font-size: 2rem;
+            margin-bottom: 30px;
+            color: var(--dark-gray);
+        }
+        
+        .content-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: center;
+        }
+        
+        .content-text {
+            font-size: 1.1rem;
+        }
+        
+        .content-text p {
+            margin-bottom: 15px;
+        }
+        
+        .content-text ul {
+            margin-left: 20px;
+            margin-bottom: 20px;
+        }
+        
+        .content-text li {
+            margin-bottom: 8px;
+        }
+        
+        .content-image {
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        
+        /* ===== Values Section ===== */
+        .values-section {
+            background-color: var(--light-gray);
+        }
+        
+        .values-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .value-card {
+            display: flex;
+            gap: 15px;
+            align-items: flex-start;
+        }
+        
+        .value-icon {
+            width: 50px;
+            height: 50px;
+            background-color: var(--white);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            font-size: 1.5rem;
+        }
+        
+        /* ===== CTA Section ===== */
+        .cta-section {
+            text-align: center;
+            background-color: var(--light-gray);
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background-color: var(--canva-purple);
+            color: var(--white);
+            padding: 12px 30px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 20px;
+            transition: background-color 0.3s;
+        }
+        
+        .cta-button:hover {
+            background-color: #6b1fd1;
+        }
+        
+        /* ===== Footer ===== */
+        .footer {
+            background-color: var(--dark-gray);
+            color: var(--white);
+            padding: 30px 20px;
+            text-align: center;
+        }
+        
+        /* ===== Responsive Adjustments ===== */
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2rem;
+                padding-top: 20px;
+            }
+            
+            .content-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .values-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .section {
+                padding: 40px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <a href="https://public.canva.site/2023-canvassador-applications" class="back-link">Back to community programs</a>
+        <h1>Apply to become an Empower Community Canvassador!</h1>
+    </header>
+    
+    <!-- About Section -->
+    <section class="section">
+        <h2 class="section-title">What is the Empower Canvassador program?</h2>
+        <div class="content-grid">
+            <div class="content-image">
+                <img src="./img/empower.jpg" alt="Empower Canvassador program" width="600" height="400">
+            </div>
+            <div class="content-text">
+                <p>Thanks for your interest in our exciting new Empower Canvassador program!</p>
+                <p>The program's primary mission is to empower content creators who consistently create engaging content and tutorials around Canva's products and features.</p>
+                <p>Empower Canvassadors excel in simplifying complex tasks on Canva, creating a variety of tutorials around our products & features that make it easy for others to understand and upskill effortlessly. Program members gain access to valuable resources that will support and enhance their content creation efforts.</p>
+                <p>Together, we will work towards empowering the world to unleash their creativity through design!</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Who Makes a Great Canvassador -->
+    <section class="section" style="background-color: var(--light-gray);">
+        <h2 class="section-title">Who makes a great Empower Canvassador?</h2>
+        <div class="content-grid">
+            <div class="content-text">
+                <p>We're looking for community members who consistently create engaging social media content and tutorials around Canva's products and features.</p>
+            </div>
+            <div class="content-image">
+                <img src="./img/great.jpg" alt="Great Canvassador qualities" width="600" height="400">
+            </div>
+        </div>
+    </section>
+    
+    <!-- Platforms Section -->
+    <section class="section">
+        <h2 class="section-title">Which platforms are we currently working with?</h2>
+        <div class="content-grid">
+            <div class="content-image">
+                <img src="./img/social.jpg" alt="Social media platforms" width="600" height="400">
+            </div>
+            <div class="content-text">
+                <p>We are currently collaborating with community members who create content on the following social platforms:</p>
+                <ul>
+                    <li>Instagram</li>
+                    <li>Twitter</li>
+                    <li>TikTok</li>
+                    <li>YouTube</li>
+                    <li>Facebook</li>
+                    <li>LinkedIn</li>
+                </ul>
+                <p>We'll begin to add more channels as the program evolves!</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Requirements Section -->
+    <section class="section" style="background-color: var(--light-gray);">
+        <h2 class="section-title">So, what are some of the requirements?</h2>
+        <div class="content-grid">
+            <div class="content-text">
+                <p>While there are a variety of things we're looking for in a potential Empower Canvassador, some of the standout qualities include:</p>
+                <ul>
+                    <li>Live the <a href="https://www.canva.com/about/" style="color: var(--canva-purple);">Canva Values</a></li>
+                    <li>Be an independent creator (not a brand or agency)</li>
+                    <li>Have an active and engaged social media audience</li>
+                    <li>Create and share at least one Canva-related tutorial or feature each month on one of the specified platforms, and report your activities using our designated form.</li>
+                    <li>Agree to abide and follow Canva's branding and NDA guidelines</li>
+                    <li>You are in compliance with Canva's <a href="https://www.canva.com/policies/trademark-policy/" style="color: var(--canva-purple);">Trademark Policy</a></li>
+                </ul>
+            </div>
+            <div class="content-image">
+                <img src="./img/program.jpg" alt="Program requirements" width="600" height="400">
+            </div>
+        </div>
+    </section>
+    
+    <!-- Perks Section -->
+    <section class="section">
+        <h2 class="section-title">What are some of the perks of joining?</h2>
+        <div class="content-grid">
+            <div class="content-image">
+                <img src="./img/perk.jpg" alt="Program perks" width="600" height="400">
+            </div>
+            <div class="content-text">
+                <p>These are just some of the things our Empower Canvassadors get to enjoy while being a part of the program:</p>
+                <ul>
+                    <li>Special Canvassador badge</li>
+                    <li>Opportunities to participate in beta tests</li>
+                    <li>Educational workshops and webinars</li>
+                    <li>Highlights featuring recent releases and updates from program members</li>
+                    <li>Affiliate perks (earn commissions on Canva Pro conversions)</li>
+                </ul>
+                <p>Additional benefits will be added along the way!</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Values Section -->
+    <section class="section values-section">
+        <h2 class="section-title" style="text-align: center;">Our Canva Community values</h2>
+        
+        <div class="values-grid">
+            <div class="value-card">
+                <div class="value-icon">👤</div>
+                <div>
+                    <h3>Be a good human</h3>
+                    <p>You're warm, friendly, mindful of our guidelines, and carry yourself with kindness and acceptance.</p>
+                </div>
+            </div>
+            
+            <div class="value-card">
+                <div class="value-icon">💪</div>
+                <div>
+                    <h3>Empower others</h3>
+                    <p>You're an amazing role model to the community, and inspire the best in others.</p>
+                </div>
+            </div>
+            
+            <div class="value-card">
+                <div class="value-icon">✨</div>
+                <div>
+                    <h3>Make complex things simple</h3>
+                    <p>You share your wisdom, and go out of your way to break down barriers for others.</p>
+                </div>
+            </div>
+            
+            <div class="value-card">
+                <div class="value-icon">❤️</div>
+                <div>
+                    <h3>Be a force for good</h3>
+                    <p>You give kudos, and genuinely make the community a better, more welcoming place.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Apply Section -->
+    <section class="section cta-section">
+        <h2 class="section-title">This is great! So how do I join?</h2>
+        <p>Applications for this program are currently closed—but don't worry, they'll be reopening soon! Check back regularly for updates and details.</p>
+        <a href="https://share.hsforms.com/1w1rNmKeIQFOFeGt-vXc1rQcbpx6" class="cta-button">See programs</a>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2023 Canva. All rights reserved.</p>
+    </footer>
+</body>
+</html>
