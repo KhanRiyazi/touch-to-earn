@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>🚀 Digital Empire Monetization Dashboard | 260 Repos | 500+ Blogs</title>
+  <title>🚀 Digital Monetization Powerhouse | 260 Repos | 500+ Blogs | Canva Templates | Ad Expertise</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
   <style>
     :root {
@@ -12,8 +12,11 @@
       --primary-light: #8a6dbb;
       --text: #f8fafc;
       --text-secondary: #94a3b8;
-      --accent: #ff7043; /* Vibrant orange */
-      --accent-dark: #f4511e;
+      --accent: #00C4CC; /* Canva teal */
+      --accent-dark: #00a8b0;
+      --google-blue: #4285F4;
+      --meta-blue: #1877F2;
+      --seo-green: #0F9D58;
       --success: #4caf50;
       --warning: #ff9800;
       --danger: #f44336;
@@ -115,7 +118,7 @@
       font-weight: bold;
       color: var(--accent);
       margin: 10px 0;
-      text-shadow: 0 2px 5px rgba(255, 112, 67, 0.3);
+      text-shadow: 0 2px 5px rgba(0, 196, 204, 0.3);
     }
     
     .time-value {
@@ -127,7 +130,7 @@
       text-shadow: 0 0 10px rgba(110, 84, 148, 0.5);
     }
     
-    .repo-card, .blog-card {
+    .repo-card, .blog-card, .service-card {
       background: var(--card-bg);
       border-radius: 12px;
       padding: 20px;
@@ -139,19 +142,19 @@
       overflow: hidden;
     }
     
-    .repo-card:hover, .blog-card:hover {
+    .repo-card:hover, .blog-card:hover, .service-card:hover {
       transform: translateY(-3px);
       box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.2);
     }
     
-    .repo-card::before, .blog-card::before {
+    .repo-card::before, .blog-card::before, .service-card::before {
       content: "";
       position: absolute;
       top: 0;
       left: 0;
       width: 100%;
       height: 100%;
-      background: linear-gradient(135deg, rgba(110, 84, 148, 0.1) 0%, rgba(255, 112, 67, 0.1) 100%);
+      background: linear-gradient(135deg, rgba(110, 84, 148, 0.1) 0%, rgba(0, 196, 204, 0.1) 100%);
       z-index: 0;
     }
     
@@ -163,19 +166,19 @@
     }
     
     .official-link {
-      background: rgba(255, 112, 67, 0.1);
+      background: rgba(0, 196, 204, 0.1);
       padding: 20px;
       border-radius: 12px;
       transition: all 0.3s ease;
-      border: 1px solid rgba(255, 112, 67, 0.2);
+      border: 1px solid rgba(0, 196, 204, 0.2);
       text-decoration: none;
       color: var(--text);
     }
     
     .official-link:hover {
       transform: translateY(-5px);
-      background: rgba(255, 112, 67, 0.2);
-      box-shadow: 0 10px 15px -3px rgba(255, 112, 67, 0.2);
+      background: rgba(0, 196, 204, 0.2);
+      box-shadow: 0 10px 15px -3px rgba(0, 196, 204, 0.2);
     }
     
     button {
@@ -211,7 +214,19 @@
     }
     
     .btn-accent:hover {
-      background: linear-gradient(135deg, var(--accent), #e64a19);
+      background: linear-gradient(135deg, var(--accent), #008a91);
+    }
+    
+    .btn-google {
+      background: linear-gradient(135deg, var(--google-blue), #3367D6);
+    }
+    
+    .btn-meta {
+      background: linear-gradient(135deg, var(--meta-blue), #145388);
+    }
+    
+    .btn-seo {
+      background: linear-gradient(135deg, var(--seo-green), #0B8043);
     }
     
     .time-section {
@@ -272,10 +287,39 @@
     }
     
     .highlight {
-      background: linear-gradient(90deg, transparent 50%, rgba(255, 112, 67, 0.3) 50%);
+      background: linear-gradient(90deg, transparent 50%, rgba(0, 196, 204, 0.3) 50%);
       background-size: 200% 100%;
       animation: highlight 2s ease infinite;
       padding: 0 5px;
+    }
+    
+    .service-badge {
+      display: inline-block;
+      padding: 2px 8px;
+      border-radius: 4px;
+      font-size: 0.7rem;
+      font-weight: bold;
+      margin-right: 8px;
+    }
+    
+    .canva-badge {
+      background-color: var(--accent);
+      color: white;
+    }
+    
+    .google-badge {
+      background-color: var(--google-blue);
+      color: white;
+    }
+    
+    .meta-badge {
+      background-color: var(--meta-blue);
+      color: white;
+    }
+    
+    .seo-badge {
+      background-color: var(--seo-green);
+      color: white;
     }
     
     @keyframes highlight {
@@ -298,7 +342,7 @@
       color: white;
       padding: 15px 25px;
       border-radius: 50px;
-      box-shadow: 0 10px 25px rgba(255, 112, 67, 0.3);
+      box-shadow: 0 10px 25px rgba(0, 196, 204, 0.3);
       z-index: 100;
       font-weight: bold;
       cursor: pointer;
@@ -309,7 +353,7 @@
     
     .floating-cta:hover {
       transform: translateY(-5px) scale(1.05);
-      box-shadow: 0 15px 30px rgba(255, 112, 67, 0.4);
+      box-shadow: 0 15px 30px rgba(0, 196, 204, 0.4);
     }
     
     .floating-cta i {
@@ -374,8 +418,8 @@
 </head>
 <body>
   <div class="container">
-    <h1 class="animate__animated animate__fadeIn">🚀 Digital Empire Monetization Dashboard</h1>
-    <p class="animate__animated animate__fadeIn animate__delay-1s">Tracking <span class="highlight">260 GitHub Repositories</span> and <span class="highlight">500+ Blog Posts</span> - Every Second Counts Toward Your <span class="highlight">$1M+ Potential</span></p>
+    <h1 class="animate__animated animate__fadeIn">🚀 Digital Monetization Powerhouse</h1>
+    <p class="animate__animated animate__fadeIn animate__delay-1s">Under Your Supervision: <span class="highlight">260 Repos</span> • <span class="highlight">500+ Blogs</span> • <span class="highlight">Canva Templates</span> • <span class="highlight">Google/Meta Ads</span> • <span class="highlight">SEO Ranking</span></p>
     
     <div class="card animate__animated animate__fadeIn animate__delay-1s">
       <h2>My Digital Assets <span class="urgency-badge">ACTIVATE NOW</span></h2>
@@ -399,8 +443,17 @@
           <small>Monetization progress: <span id="blog-progress-text">0%</span></small>
         </div>
         <div class="stat-card">
+          <h3>Canva Templates</h3>
+          <div class="stat-number">100+</div>
+          <p>Design assets ready for marketplace</p>
+          <div class="progress-container">
+            <div class="progress-bar" id="canva-progress"></div>
+          </div>
+          <small>Monetization progress: <span id="canva-progress-text">0%</span></small>
+        </div>
+        <div class="stat-card">
           <h3>Potential Value</h3>
-          <div class="stat-number">$1M+</div>
+          <div class="stat-number">$1.5M+</div>
           <p>Estimated annual revenue if fully monetized</p>
           <div class="progress-container">
             <div class="progress-bar" id="value-progress"></div>
@@ -423,15 +476,15 @@
           <p>500+ articles - Add AdSense and affiliate links</p>
           <div class="potential-tag">$30k+/year potential</div>
         </a>
-        <a href="https://yourportfolio.com" target="_blank" class="official-link">
-          <h3><i class="fas fa-briefcase"></i> Portfolio Site</h3>
-          <p>Showcase premium services and products</p>
+        <a href="https://www.canva.com/" target="_blank" class="official-link">
+          <h3><i class="fas fa-palette"></i> Canva Templates</h3>
+          <p>100+ designs - Sell on Etsy/Gumroad</p>
           <div class="potential-tag">$20k+/year potential</div>
         </a>
         <a href="https://khanriyazi.github.io/Link-Project/" target="_blank" class="official-link">
-          <h3><i class="fab fa-linkedin"></i> LinkedIn</h3>
-          <p>Convert connections to consulting clients</p>
-          <div class="potential-tag">$10k+/year potential</div>
+          <h3><i class="fas fa-ad"></i> Ad Services</h3>
+          <p>Google & Meta Ads expertise</p>
+          <div class="potential-tag">$40k+/year potential</div>
         </a>
       </div>
     </div>
@@ -455,75 +508,80 @@
           <button class="btn-accent" onclick="showBlogStrategies()">Monetize Now</button>
         </div>
         <div class="time-block">
-          <h3><i class="fas fa-chart-line"></i> Total Potential</h3>
-          <p>Combined monetization from all assets</p>
-          <div id="totalEarnings" class="stat-number">$0.00</div>
-          <button class="btn-accent" onclick="showActionPlan()">Take Action Now</button>
+          <h3><i class="fas fa-palette"></i> Canva Earnings</h3>
+          <p>$0.10 per template per hour (marketplace sales)</p>
+          <div id="canvaEarnings" class="stat-number">$0.00</div>
+          <button class="btn-accent" onclick="showCanvaStrategies()">Sell Templates</button>
         </div>
       </div>
     </div>
     
+    <!-- New Canva Templates Section -->
     <div class="card animate__animated animate__fadeIn animate__delay-3s">
-      <h2>🔥 Top Repositories to Monetize NOW</h2>
-      <p>These repositories have the highest immediate monetization potential</p>
+      <h2>🎨 Canva Templates Monetization</h2>
+      <p>Leverage your design skills and templates for maximum profit</p>
       
-      <div class="repo-card">
-        <h3>1. Web Scraping Toolkit <span class="potential-tag">$10k+ potential</span></h3>
-        <p><strong>🚀 Quick Win:</strong> Add GitHub Sponsors button (takes 5 minutes)</p>
-        <p><strong>💰 Premium Strategy:</strong> Create SaaS version with GUI ($50/month subscriptions)</p>
-        <p><strong>⏱️ Time to Implement:</strong> 2 days for MVP</p>
-        <button onclick="window.open('https://github.com/yourusername/web-scraping-toolkit')"><i class="fas fa-rocket"></i> View Repo</button>
-        <button class="btn-accent" onclick="showRepoPlan('web-scraping-toolkit')"><i class="fas fa-lightbulb"></i> Monetization Plan</button>
+      <div class="service-card">
+        <h3>1. Social Media Template Pack <span class="potential-tag">$15k+ potential</span></h3>
+        <p><span class="service-badge canva-badge">Canva</span> <span class="service-badge meta-badge">Meta Ads</span> <span class="service-badge google-badge">Google Ads</span></p>
+        <p><strong>🚀 Quick Win:</strong> Sell on Etsy ($29.99 pack)</p>
+        <p><strong>💰 Premium Strategy:</strong> Subscription for monthly updates ($19/month)</p>
+        <p><strong>⏱️ Time to Implement:</strong> 2 days to package</p>
+        <button onclick="window.open('https://www.canva.com/')"><i class="fas fa-palette"></i> View Templates</button>
+        <button class="btn-accent" onclick="showCanvaPlan('social-templates')"><i class="fas fa-lightbulb"></i> Monetization Plan</button>
       </div>
       
-      <div class="repo-card">
-        <h3>2. Django E-commerce Template <span class="potential-tag">$25k+ potential</span></h3>
-        <p><strong>🚀 Quick Win:</strong> Sell on CodeCanyon ($50-200 per sale)</p>
-        <p><strong>💰 Premium Strategy:</strong> Offer customization services ($500-2000 per project)</p>
-        <p><strong>⏱️ Time to Implement:</strong> 1 week to prepare for marketplace</p>
-        <button onclick="window.open('https://github.com/yourusername/django-ecommerce')"><i class="fas fa-rocket"></i> View Repo</button>
-        <button class="btn-accent" onclick="showRepoPlan('django-ecommerce')"><i class="fas fa-lightbulb"></i> Monetization Plan</button>
+      <div class="service-card">
+        <h3>2. Ad Creative Templates <span class="potential-tag">$25k+ potential</span></h3>
+        <p><span class="service-badge canva-badge">Canva</span> <span class="service-badge meta-badge">Meta Ads</span> <span class="service-badge google-badge">Google Ads</span></p>
+        <p><strong>🚀 Quick Win:</strong> Gumroad download ($49.99)</p>
+        <p><strong>💰 Premium Strategy:</strong> Offer customization service ($200 per set)</p>
+        <p><strong>⏱️ Time to Implement:</strong> 3 days to prepare</p>
+        <button onclick="window.open('https://www.canva.com/')"><i class="fas fa-palette"></i> View Templates</button>
+        <button class="btn-accent" onclick="showCanvaPlan('ad-templates')"><i class="fas fa-lightbulb"></i> Monetization Plan</button>
       </div>
       
-      <div class="repo-card">
-        <h3>3. Canva Automation Scripts <span class="potential-tag">$15k+ potential</span></h3>
-        <p><strong>🚀 Quick Win:</strong> Gumroad download ($29 one-time payment)</p>
-        <p><strong>💰 Premium Strategy:</strong> Membership site with updates ($15/month)</p>
-        <p><strong>⏱️ Time to Implement:</strong> 3 days to package</p>
-        <button onclick="window.open('https://github.com/yourusername/canva-automation')"><i class="fas fa-rocket"></i> View Repo</button>
-        <button class="btn-accent" onclick="showRepoPlan('canva-automation')"><i class="fas fa-lightbulb"></i> Monetization Plan</button>
+      <div class="service-card">
+        <h3>3. SEO-Optimized Blog Graphics <span class="potential-tag">$18k+ potential</span></h3>
+        <p><span class="service-badge canva-badge">Canva</span> <span class="service-badge seo-badge">SEO</span></p>
+        <p><strong>🚀 Quick Win:</strong> Sell to bloggers ($39.99 pack)</p>
+        <p><strong>💰 Premium Strategy:</strong> Bundle with your blog posts</p>
+        <p><strong>⏱️ Time to Implement:</strong> 1 day to package</p>
+        <button onclick="window.open('https://www.canva.com/')"><i class="fas fa-palette"></i> View Templates</button>
+        <button class="btn-accent" onclick="showCanvaPlan('blog-graphics')"><i class="fas fa-lightbulb"></i> Monetization Plan</button>
       </div>
     </div>
     
+    <!-- New Ad Services Section -->
     <div class="card animate__animated animate__fadeIn animate__delay-3s">
-      <h2>📈 Top Blog Posts to Monetize NOW</h2>
-      <p>These articles are your low-hanging fruit for immediate revenue</p>
+      <h2>📈 Ad Services & SEO Monetization</h2>
+      <p>Monetize your Google Ads, Meta Ads, and SEO expertise</p>
       
-      <div class="blog-card">
-        <h3>1. "Web Scraping with Python" <span class="potential-tag">$5k+/month</span></h3>
-        <p><strong>🚀 Quick Win:</strong> Add affiliate links to hosting/VPS providers</p>
-        <p><strong>💰 Premium Strategy:</strong> Convert to Udemy course ($5,000+/month)</p>
-        <p><strong>⏱️ Time to Implement:</strong> 1 hour for affiliates, 1 week for course</p>
-        <button onclick="window.open('https://yourblog.blogspot.com/web-scraping-guide')"><i class="fas fa-rocket"></i> View Post</button>
-        <button class="btn-accent" onclick="showBlogPlan('web-scraping-guide')"><i class="fas fa-lightbulb"></i> Monetization Plan</button>
+      <div class="service-card">
+        <h3>1. Google Ads Audit Service <span class="potential-tag">$30k+ potential</span></h3>
+        <p><span class="service-badge google-badge">Google Ads</span> <span class="service-badge seo-badge">SEO</span></p>
+        <p><strong>🚀 Quick Win:</strong> Offer audits ($500 each)</p>
+        <p><strong>💰 Premium Strategy:</strong> Monthly management ($1k+/month)</p>
+        <p><strong>⏱️ Time to Implement:</strong> 1 day to setup offer</p>
+        <button class="btn-google" onclick="showAdPlan('google-audit')"><i class="fab fa-google"></i> Service Details</button>
       </div>
       
-      <div class="blog-card">
-        <h3>2. "Django Deployment Guide" <span class="potential-tag">$3k+/month</span></h3>
-        <p><strong>🚀 Quick Win:</strong> Enable AdSense (takes 10 minutes)</p>
-        <p><strong>💰 Premium Strategy:</strong> Sell as ebook with bonus content ($29.99)</p>
-        <p><strong>⏱️ Time to Implement:</strong> 1 day to compile and publish</p>
-        <button onclick="window.open('https://yourblog.blogspot.com/django-deployment')"><i class="fas fa-rocket"></i> View Post</button>
-        <button class="btn-accent" onclick="showBlogPlan('django-deployment')"><i class="fas fa-lightbulb"></i> Monetization Plan</button>
+      <div class="service-card">
+        <h3>2. Meta Ads Creative Service <span class="potential-tag">$35k+ potential</span></h3>
+        <p><span class="service-badge meta-badge">Meta Ads</span> <span class="service-badge canva-badge">Canva</span></p>
+        <p><strong>🚀 Quick Win:</strong> Sell ad templates ($99 pack)</p>
+        <p><strong>💰 Premium Strategy:</strong> Done-for-you ad creation ($2k/month)</p>
+        <p><strong>⏱️ Time to Implement:</strong> 2 days to package</p>
+        <button class="btn-meta" onclick="showAdPlan('meta-creative')"><i class="fab fa-facebook"></i> Service Details</button>
       </div>
       
-      <div class="blog-card">
-        <h3>3. "Automating Canva Designs" <span class="potential-tag">$2k+/month</span></h3>
-        <p><strong>🚀 Quick Win:</strong> Canva Pro affiliate links (existing demand)</p>
-        <p><strong>💰 Premium Strategy:</strong> Video tutorial series ($99 course)</p>
-        <p><strong>⏱️ Time to Implement:</strong> 30 minutes for links, 3 days for course</p>
-        <button onclick="window.open('https://yourblog.blogspot.com/canva-automation')"><i class="fas fa-rocket"></i> View Post</button>
-        <button class="btn-accent" onclick="showBlogPlan('canva-automation')"><i class="fas fa-lightbulb"></i> Monetization Plan</button>
+      <div class="service-card">
+        <h3>3. SEO Ranking Service <span class="potential-tag">$40k+ potential</span></h3>
+        <p><span class="service-badge seo-badge">SEO</span> <span class="service-badge google-badge">Google</span></p>
+        <p><strong>🚀 Quick Win:</strong> SEO audits ($1,000 each)</p>
+        <p><strong>💰 Premium Strategy:</strong> Ongoing SEO management ($3k+/month)</p>
+        <p><strong>⏱️ Time to Implement:</strong> 3 days to create packages</p>
+        <button class="btn-seo" onclick="showAdPlan('seo-service')"><i class="fas fa-search"></i> Service Details</button>
       </div>
     </div>
     
@@ -533,31 +591,31 @@
       
       <div class="time-section">
         <div class="time-block">
-          <h3><i class="fas fa-bolt"></i> Today (30 Minutes)</h3>
+          <h3><i class="fas fa-bolt"></i> Today (1 Hour)</h3>
           <ol>
-            <li>Add GitHub Sponsors button to top 10 repos</li>
-            <li>Enable AdSense on top 5 blog posts</li>
-            <li>Add 3 affiliate links to highest traffic post</li>
+            <li>Upload 3 Canva templates to Etsy</li>
+            <li>Create Google Ads audit offer</li>
+            <li>Add affiliate links to 5 blog posts</li>
           </ol>
-          <button class="btn-accent" onclick="window.open('https://github.com/settings/sponsors')">Setup Sponsors</button>
+          <button class="btn-accent" onclick="window.open('https://www.etsy.com/')">Start With Etsy</button>
         </div>
         <div class="time-block">
           <h3><i class="fas fa-calendar-week"></i> This Week (5 Hours)</h3>
           <ol>
-            <li>Create Gumroad account and publish 1 digital product</li>
-            <li>Add affiliate links to 20 top posts</li>
-            <li>Package 1 repo as premium product</li>
+            <li>Package Canva templates for Gumroad</li>
+            <li>Setup Meta Ads creative service page</li>
+            <li>Create SEO audit PDF</li>
           </ol>
           <button class="btn-accent" onclick="window.open('https://gumroad.com/')">Start With Gumroad</button>
         </div>
         <div class="time-block">
           <h3><i class="fas fa-calendar-alt"></i> This Month (20 Hours)</h3>
           <ol>
-            <li>Launch Udemy course from top tutorial</li>
-            <li>Create SaaS version of most popular repo</li>
-            <li>Setup email list to capture leads</li>
+            <li>Launch full ad services website</li>
+            <li>Create Canva template membership</li>
+            <li>Develop SEO ranking course</li>
           </ol>
-          <button class="btn-accent" onclick="window.open('https://www.udemy.com/teaching/')">Start Course</button>
+          <button class="btn-accent" onclick="window.open('https://www.udemy.com/teaching/')">Start Course Creation</button>
         </div>
       </div>
     </div>
@@ -583,16 +641,20 @@
     let seconds = 0;
     const repoCount = 260;
     const blogCount = 500;
+    const canvaCount = 100;
     let repoMonetized = 26; // 10%
     let blogMonetized = 50; // 10%
+    let canvaMonetized = 10; // 10%
     let valueCaptured = 0.1; // 10%
     
     // Initialize progress bars
     document.getElementById('repo-progress').style.width = `${(repoMonetized/repoCount)*100}%`;
     document.getElementById('blog-progress').style.width = `${(blogMonetized/blogCount)*100}%`;
+    document.getElementById('canva-progress').style.width = `${(canvaMonetized/canvaCount)*100}%`;
     document.getElementById('value-progress').style.width = `${valueCaptured*100}%`;
     document.getElementById('repo-progress-text').textContent = `${Math.round((repoMonetized/repoCount)*100)}%`;
     document.getElementById('blog-progress-text').textContent = `${Math.round((blogMonetized/blogCount)*100)}%`;
+    document.getElementById('canva-progress-text').textContent = `${Math.round((canvaMonetized/canvaCount)*100)}%`;
     document.getElementById('value-progress-text').textContent = `${Math.round(valueCaptured*100)}%`;
     
     function updateCounter() {
@@ -607,27 +669,32 @@
       // Calculate potential earnings
       const repoRate = 0.15; // $ per repo per hour
       const blogRate = 0.08; // $ per blog per hour
+      const canvaRate = 0.10; // $ per template per hour
       
       const hoursPassed = seconds / 3600;
       const repoEarnings = (repoCount * repoRate * hoursPassed).toFixed(2);
       const blogEarnings = (blogCount * blogRate * hoursPassed).toFixed(2);
-      const totalEarnings = (parseFloat(repoEarnings) + parseFloat(blogEarnings)).toFixed(2);
+      const canvaEarnings = (canvaCount * canvaRate * hoursPassed).toFixed(2);
+      const totalEarnings = (parseFloat(repoEarnings) + parseFloat(blogEarnings) + parseFloat(canvaEarnings)).toFixed(2);
       
       document.getElementById('repoEarnings').textContent = `$${repoEarnings}`;
       document.getElementById('blogEarnings').textContent = `$${blogEarnings}`;
-      document.getElementById('totalEarnings').textContent = `$${totalEarnings}`;
+      document.getElementById('canvaEarnings').textContent = `$${canvaEarnings}`;
       
       // Simulate progress (in a real app, this would come from actual data)
       if(seconds % 10 === 0) {
         repoMonetized = Math.min(repoMonetized + 0.1, repoCount);
         blogMonetized = Math.min(blogMonetized + 0.2, blogCount);
+        canvaMonetized = Math.min(canvaMonetized + 0.3, canvaCount);
         valueCaptured = Math.min(valueCaptured + 0.001, 1);
         
         document.getElementById('repo-progress').style.width = `${(repoMonetized/repoCount)*100}%`;
         document.getElementById('blog-progress').style.width = `${(blogMonetized/blogCount)*100}%`;
+        document.getElementById('canva-progress').style.width = `${(canvaMonetized/canvaCount)*100}%`;
         document.getElementById('value-progress').style.width = `${valueCaptured*100}%`;
         document.getElementById('repo-progress-text').textContent = `${Math.round((repoMonetized/repoCount)*100)}%`;
         document.getElementById('blog-progress-text').textContent = `${Math.round((blogMonetized/blogCount)*100)}%`;
+        document.getElementById('canva-progress-text').textContent = `${Math.round((canvaMonetized/canvaCount)*100)}%`;
         document.getElementById('value-progress-text').textContent = `${Math.round(valueCaptured*100)}%`;
       }
     }
@@ -686,6 +753,26 @@
       showModal('Blog Monetization Strategies', strategies);
     }
     
+    function showCanvaStrategies() {
+      const strategies = `
+        <h3>Canva Templates Monetization</h3>
+        <ol>
+          <li><strong>Marketplace Sales</strong> - Sell on Etsy, Creative Market, Gumroad</li>
+          <li><strong>Subscription Model</strong> - Monthly updated templates</li>
+          <li><strong>Bundles</strong> - Package templates with your coding repos</li>
+          <li><strong>Custom Design Services</strong> - Offer personalized versions</li>
+          <li><strong>Ad Creatives</strong> - Sell templates specifically for ads</li>
+        </ol>
+        <h4>First Steps:</h4>
+        <ul>
+          <li>Upload 3 best templates to Etsy (1 hour)</li>
+          <li>Create Gumroad product page (30 minutes)</li>
+          <li>Add to your blog posts as premium content</li>
+        </ul>
+      `;
+      showModal('Canva Monetization Strategies', strategies);
+    }
+    
     function showActionPlan() {
       const plan = `
         <h3>30-Day Monetization Sprint</h3>
@@ -693,198 +780,200 @@
         <ul>
           <li>Add GitHub Sponsors to all repos</li>
           <li>Enable AdSense on top 10 blog posts</li>
-          <li>Add affiliate links to 20 posts</li>
-          <li>Create Gumroad account</li>
+          <li>Upload 5 Canva templates to Etsy</li>
+          <li>Create Google Ads audit offer</li>
         </ul>
         
         <h4>Week 2: Productize</h4>
         <ul>
           <li>Package 3 repos as premium products</li>
           <li>Convert top post to PDF ebook</li>
-          <li>Setup email list capture</li>
+          <li>Setup Meta Ads creative service</li>
+          <li>Create Canva template bundle</li>
         </ul>
         
         <h4>Week 3-4: Scale</h4>
         <ul>
-          <li>Launch first Udemy course</li>
-          <li>Create SaaS from most popular repo</li>
-          <li>Offer consulting services</li>
+          <li>Launch full ad services website</li>
+          <li>Create Canva template membership</li>
+          <li>Develop SEO ranking course</li>
+          <li>Setup email automation</li>
         </ul>
         
         <h4>Projected 30-Day Revenue:</h4>
-        <p><strong>$3,000 - $10,000</strong> from combined strategies</p>
+        <p><strong>$5,000 - $15,000</strong> from combined strategies</p>
       `;
       showModal('30-Day Action Plan', plan);
     }
     
-    function showRepoPlan(repoName) {
+    function showCanvaPlan(templateType) {
       const plans = {
-        'web-scraping-toolkit': `
-          <h3>Web Scraping Toolkit Monetization</h3>
+        'social-templates': `
+          <h3>Social Media Templates Monetization</h3>
           <h4>Quick Wins (1 Day):</h4>
           <ul>
-            <li>Add GitHub Sponsors button</li>
-            <li>Create Gumroad download ($29)</li>
-            <li>Add affiliate links to proxies/VPS</li>
+            <li>Sell on Etsy ($29.99 pack)</li>
+            <li>Offer free sample to build email list</li>
+            <li>Add to your blog posts as premium content</li>
           </ul>
           
           <h4>Mid-Term (1 Week):</h4>
           <ul>
-            <li>Create premium documentation ($49)</li>
-            <li>Offer scraping services ($500/project)</li>
-            <li>Build GUI version</li>
+            <li>Create bundle with Instagram carousels</li>
+            <li>Offer customization service ($50 per template)</li>
+            <li>Run Meta Ads to promote</li>
           </ul>
           
           <h4>Long-Term (1 Month):</h4>
           <ul>
-            <li>SaaS version ($29/month)</li>
-            <li>Video course ($99)</li>
-            <li>Enterprise licenses</li>
+            <li>Monthly membership ($19/month)</li>
+            <li>White-label for agencies</li>
+            <li>Video tutorial series</li>
           </ul>
           
           <h4>Revenue Potential:</h4>
-          <p><strong>$10,000+</strong> in first year</p>
+          <p><strong>$15,000+</strong> in first year</p>
         `,
-        'django-ecommerce': `
-          <h3>Django E-commerce Monetization</h3>
+        'ad-templates': `
+          <h3>Ad Creative Templates Monetization</h3>
           <h4>Quick Wins (1 Day):</h4>
           <ul>
-            <li>Sell on CodeCanyon ($50-200 per sale)</li>
-            <li>Offer installation service ($200)</li>
-            <li>Add affiliate links to hosting</li>
+            <li>Sell on Gumroad ($49.99)</li>
+            <li>Offer to your ad clients as bonus</li>
+            <li>Create YouTube demo video</li>
           </ul>
           
           <h4>Mid-Term (1 Week):</h4>
           <ul>
-            <li>Create premium extensions</li>
-            <li>Offer customization ($500-2000)</li>
-            <li>Build SaaS version</li>
+            <li>Bundle with ad copy templates</li>
+            <li>Offer done-for-you ad creation</li>
+            <li>Run Google Ads to promote</li>
           </ul>
           
           <h4>Long-Term (1 Month):</h4>
           <ul>
-            <li>Monthly support plans</li>
-            <li>Video tutorial series</li>
-            <li>Marketplace for themes</li>
+            <li>Agency licensing</li>
+            <li>Custom design service</li>
+            <li>Monthly updated packs</li>
           </ul>
           
           <h4>Revenue Potential:</h4>
           <p><strong>$25,000+</strong> in first year</p>
         `,
-        'canva-automation': `
-          <h3>Canva Automation Monetization</h3>
+        'blog-graphics': `
+          <h3>SEO Blog Graphics Monetization</h3>
           <h4>Quick Wins (1 Day):</h4>
           <ul>
-            <li>Gumroad download ($29)</li>
-            <li>Canva Pro affiliate links</li>
-            <li>Fiverr gig for automation</li>
+            <li>Sell to your blog readers ($39.99)</li>
+            <li>Offer as lead magnet</li>
+            <li>Add to your GitHub repos</li>
           </ul>
           
           <h4>Mid-Term (1 Week):</h4>
           <ul>
-            <li>Membership site ($15/month)</li>
-            <li>Video tutorials</li>
-            <li>Template marketplace</li>
-          </ul>
-          
-          <h4>Long-Term (1 Month):</h4>
-          <ul>
-            <li>Browser extension</li>
-            <li>Agency services</li>
-            <li>Bulk automation tool</li>
-          </ul>
-          
-          <h4>Revenue Potential:</h4>
-          <p><strong>$15,000+</strong> in first year</p>
-        `
-      };
-      
-      showModal(`${repoName} Monetization Plan`, plans[repoName] || `<p>No specific plan found for this repository.</p>`);
-    }
-    
-    function showBlogPlan(postName) {
-      const plans = {
-        'web-scraping-guide': `
-          <h3>"Web Scraping with Python" Monetization</h3>
-          <h4>Quick Wins (1 Hour):</h4>
-          <ul>
-            <li>Enable AdSense</li>
-            <li>Add affiliate links to proxies/VPS</li>
-            <li>Add GitHub Sponsors link</li>
-          </ul>
-          
-          <h4>Mid-Term (1 Week):</h4>
-          <ul>
-            <li>Create PDF guide ($19)</li>
-            <li>Record video version</li>
-            <li>Build email course</li>
-          </ul>
-          
-          <h4>Long-Term (1 Month):</h4>
-          <ul>
-            <li>Udemy course ($5k+/month)</li>
-            <li>Premium community</li>
-            <li>Consulting offers</li>
-          </ul>
-          
-          <h4>Revenue Potential:</h4>
-          <p><strong>$5,000+/month</strong> after 3 months</p>
-        `,
-        'django-deployment': `
-          <h3>"Django Deployment Guide" Monetization</h3>
-          <h4>Quick Wins (1 Hour):</h4>
-          <ul>
-            <li>Enable AdSense</li>
-            <li>Add hosting affiliate links</li>
-            <li>Add "Buy Me a Coffee" button</li>
-          </ul>
-          
-          <h4>Mid-Term (1 Week):</h4>
-          <ul>
-            <li>Create ebook ($29)</li>
-            <li>Offer deployment service</li>
-            <li>Build checklist download</li>
-          </ul>
-          
-          <h4>Long-Term (1 Month):</h4>
-          <ul>
-            <li>Video course</li>
-            <li>Monthly Q&A calls</li>
-            <li>Template marketplace</li>
-          </ul>
-          
-          <h4>Revenue Potential:</h4>
-          <p><strong>$3,000+/month</strong> after 3 months</p>
-        `,
-        'canva-automation': `
-          <h3>"Automating Canva Designs" Monetization</h3>
-          <h4>Quick Wins (30 Minutes):</h4>
-          <ul>
-            <li>Add Canva Pro affiliate links</li>
-            <li>Enable AdSense</li>
-            <li>Link to free script download</li>
-          </ul>
-          
-          <h4>Mid-Term (1 Week):</h4>
-          <ul>
-            <li>Create template pack ($49)</li>
-            <li>Record tutorial videos</li>
-            <li>Offer automation service</li>
+            <li>Create niche-specific versions</li>
+            <li>Bundle with SEO services</li>
+            <li>Offer PLR rights</li>
           </ul>
           
           <h4>Long-Term (1 Month):</h4>
           <ul>
             <li>Membership site</li>
-            <li>Agency services</li>
-            <li>Browser extension</li>
+            <li>White-label for SEO agencies</li>
+            <li>Automated funnel</li>
           </ul>
           
           <h4>Revenue Potential:</h4>
-          <p><strong>$2,000+/month</strong> after 3 months</p>
+          <p><strong>$18,000+</strong> in first year</p>
         `
       };
       
-      showModal(`${postName} Monetization Plan`, plans[postName] || `<p>No specific plan found for this blog post.</p>`);
+      showModal(`Canva ${templateType} Monetization Plan`, plans[templateType] || `<p>No specific plan found for these templates.</p>`);
+    }
+    
+    function showAdPlan(serviceType) {
+      const plans = {
+        'google-audit': `
+          <h3>Google Ads Audit Service</h3>
+          <h4>Quick Wins (1 Day):</h4>
+          <ul>
+            <li>Create audit offer ($500)</li>
+            <li>Target your blog readers</li>
+            <li>Use your Canva templates for ads</li>
+          </ul>
+          
+          <h4>Mid-Term (1 Week):</h4>
+          <ul>
+            <li>Develop tiered packages</li>
+            <li>Create case studies</li>
+            <li>Run Google Ads to promote</li>
+          </ul>
+          
+          <h4>Long-Term (1 Month):</h4>
+          <ul>
+            <li>Monthly management plans</li>
+            <li>White-label for agencies</li>
+            <li>Automated reporting</li>
+          </ul>
+          
+          <h4>Revenue Potential:</h4>
+          <p><strong>$30,000+</strong> in first year</p>
+        `,
+        'meta-creative': `
+          <h3>Meta Ads Creative Service</h3>
+          <h4>Quick Wins (1 Day):</h4>
+          <ul>
+            <li>Sell template packs ($99)</li>
+            <li>Offer free audit to get clients</li>
+            <li>Use your Canva designs as samples</li>
+          </ul>
+          
+          <h4>Mid-Term (1 Week):</h4>
+          <ul>
+            <li>Create done-for-you service</li>
+            <li>Develop portfolio page</li>
+            <li>Run Meta Ads to promote</li>
+          </ul>
+          
+          <h4>Long-Term (1 Month):</h4>
+          <ul>
+            <li>Monthly content calendar</li>
+            <li>Agency partnerships</li>
+            <li>Automated creative testing</li>
+          </ul>
+          
+          <h4>Revenue Potential:</h4>
+          <p><strong>$35,000+</strong> in first year</p>
+        `,
+        'seo-service': `
+          <h3>SEO Ranking Service</h3>
+          <h4>Quick Wins (1 Day):</h4>
+          <ul>
+            <li>Offer SEO audit ($1,000)</li>
+            <li>Target your blog readers</li>
+            <li>Use your GitHub repos as proof</li>
+          </ul>
+          
+          <h4>Mid-Term (1 Week):</h4>
+          <ul>
+            <li>Develop ranking packages</li>
+            <li>Create case studies</li>
+            <li>Run Google Ads to promote</li>
+          </ul>
+          
+          <h4>Long-Term (1 Month):</h4>
+          <ul>
+            <li>Monthly retainers</li>
+            <li>SEO course creation</li>
+            <li>Automated reporting</li>
+          </ul>
+          
+          <h4>Revenue Potential:</h4>
+          <p><strong>$40,000+</strong> in first year</p>
+        `
+      };
+      
+      showModal(`${serviceType.replace('-', ' ')} Monetization Plan`, plans[serviceType] || `<p>No specific plan found for this service.</p>`);
     }
     
     // Initialize counter
